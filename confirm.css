@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1140px) {
+  #navbottom {
+    display: none;
+  }
+  #navtop {
+    display: none;
+  }
+  #bag2 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  #navbotton {
+    display: block;
+  }
+  #navtop {
+    display: block;
+  }
+  #bag2 {
+    display: none;
+  }
+}
+html {
+  background-color: #f3f3f3;
+}
+body {
+  background-color: #f3f3f3;
+}
+#footer-left {
+  float: left;
+}
+#footer-right {
+  float: right;
+}
+#navtop {
+  background-color: white;
+}
+#logo {
+  margin: 0 20px 0 70px;
+  background-color: white;
+}
+#navbotfirstitem {
+  margin-left: 60px;
+}
+#body {
+  background-color: #f3f3f3;
+}
+#paymentBody {
+  background-color: white;
+  margin-top: 20px;
+}
+#summaryBody {
+  background-color: white;
+  margin-top: 20px;
+  
+}
+#logo2 {
+  display: none;
+}
+#rectangle{
+  width:300px;
+  height:300px;
+}

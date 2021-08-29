@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="confirm.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div id="navtop">
+      <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-around" style="padding: 10px">
+          <div class="p-2">
+            <a class="navbar-brand" href="#"
+              ><img src="img/logo.png" id="logo"
+            /></a>
+          </div>
+          <div class="p-3">
+            <h4>Checkout</h4>
+          </div>
+          <div class="p-2"></div>
+          <div class="p-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center" id="body">
+      <div class="p-2">
+        <div class="container" id="paymentBody">
+          <div class="d-flex flex-column">
+            <div class="p-2">Payment Methods</div>
+            <div class="p-2">
+              <div alt="paymentmethod_buttons" class="d-flex flex-row justify-content-start">
+                <div class="p-2">
+                  <button type="button" class="btn btn-light">Paypal</button>
+                </div>
+                <div class="p-2">
+                  <button type="button" class="btn btn-light">
+                    Credit Card
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button type="button" class="btn btn-light">
+                    Cash On Delivery
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">Add Payment Details</div>
+            <div class="p-2">
+              <div class="d-flex flex-row justify-content-start">
+                <div class="p-2">
+                  <div class="d-flex flex-column">
+                    <div class="p-1">Card Number</div>
+                    <div class="p-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Text input with checkbox"
+                        placeholder="2345 4567 3456 0404"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2">
+                  <div class="d-flex flex-column">
+                    <div class="p-1">Expiry Date</div>
+                    <div class="p-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Text input with checkbox"
+                        placeholder="MM/YY"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2">
+                  <div class="d-flex flex-column">
+                    <div class="p-1">CCV</div>
+                    <div class="p-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Text input with checkbox"
+                        placeholder="xxx"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-column">
+                <div class="p-1">Promo Code (If any)</div>
+                <div class="p-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="width: 200px"
+                    aria-label=""
+                    placeholder="Enter code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="p-2">Billing Address</div>
+            <div class="p-2">
+              <div class="d-flex flex-row">
+                <div class="p-2">
+                  <div class="input-group mb-3">
+                    <input class="form-check-input" type="checkbox" value="" />
+                  </div>
+                </div>
+                <div class="p-2">Billing address same as delivery address</div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-2">
+                  <button type="button" class="btn btn-light btn-outline-secondary" style="width: 100px" id="backButton">
+                    Back
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button type="button" class="btn btn-dark" style="width: 300px" id="confirm">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="container" id="summaryBody">
+          <div class="d-flex justify-content-center">
+            <div class="p-2">
+              <div class="rectangle">
+                <div class="summary">
+                  <div class="d-flex flex-column">
+                    <div class="p-2">
+                      <h3>Summary</h3>
+                    </div>
+                    <div class="p-2">
+                      <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">
+                          <h5>Subtotal</h5>
+                        </div>
+                        <div class="p-2">
+                          <h5 id="subtotal"></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2"><hr></div>
+                    <div class="p-2">
+                      <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">
+                          <h5>Total</h5>
+                        </div>
+                        <div class="p-2">
+                          <h5 id="total"></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="confirm.js"></script>
+</html>
