@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Responsive webpage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="bag.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="navtop">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" id="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="bag">
+                        <img src="img/bag.png" onclick="location.href = 'bag.html';">
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="bag2">
+            <img src="img/bag.png">
+        </div>
+        <div class="textbag">
+            <p>
+            <h3><b>Bag</b></h3>
+            </p>
+        </div> 
+        <div class="d-flex flex-row justify-content-around">
+            <div class="d-flex flex-column">
+                <div id="output">
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="p-2">
+                        <div class="rectangle">
+                            <div class="summary">
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">
+                                        <h3>Summary</h3>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="p-2">
+                                                <h5>Subtotal</h5>
+                                            </div>
+                                            <div class="p-2">
+                                                <h5 id="subtotal"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 line"></div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="p-2">
+                                                <h5>Total</h5>
+                                            </div>
+                                            <div class="p-2">
+                                                <h5 id="total"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="form-group1">
+                                            <label class="col-md-4 control-label" for="singlebutton"></label>
+                                            <div class="col-md-4 center-block">
+                                                <button id="checkout" name="singlebutton"
+                                                    class="btn btn-dark center-block">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="bag.js"></script>
+</html>
